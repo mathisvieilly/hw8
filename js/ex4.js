@@ -17,3 +17,21 @@ document.querySelector("form").addEventListener("submit", event => {
     document.getElementById("td-promotion").innerText = data.promotion === null ? "off" : "on";
     document.getElementById("td-location").innerText = data.location;
 });
+document.querySelector("form").addEventListener("reset", event => {
+    event.preventDefault();
+
+    document.getElementById("td-name").innerText = "";
+    document.getElementById("td-email").innerText = "";
+    document.getElementById("td-payment").innerText = "";
+    document.getElementById("td-promotion").innerText = "";
+    document.getElementById("td-location").innerText = "";
+
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("radio-cash").checked = false;
+    document.getElementById("radio-credit").checked = false;
+    document.getElementById("radio-google-pay").checked = false;
+    document.getElementById("radio-apple-pay").checked = false;
+    document.getElementById("check-promotion").checked = false;
+    document.getElementById("location").value = "la";
+});
