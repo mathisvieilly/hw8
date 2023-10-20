@@ -20,3 +20,16 @@ th {
   padding: 5px;
   background-color: lightgray;
 }
+
+form {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-types {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+}

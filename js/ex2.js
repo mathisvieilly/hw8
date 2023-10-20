@@ -10,11 +10,6 @@ document.getElementById("lookup").addEventListener("click", event => {
   fetch("https://api.github.com/users/" + value)
   .then(response => response.json())
   .then(data => {
-    if (data.message) {
-      alert(data.message);
-      return;
-    }
-
     document.getElementById("avatar").src = data.avatar_url;
     document.getElementById("name").innerText = data.name;
     document.getElementById("blog").innerText = data.blog;

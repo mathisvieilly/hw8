@@ -11,6 +11,89 @@
     <h2>Mathis' Example 4</h2>
     <h3>View console to see JavaScript Output</h3>
 
+    <h1>Sample Form</h1>
+    <form id="form">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" />
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="name@domain" />
+        </div>
+
+        <div>
+            <span>Payment Type:</span>
+            <div>
+                <input id="radio-cash" type="radio" name="payment" value="cash" />
+                <label for="radio-cash">Cash</label>
+            </div>
+        
+            <div>
+                <input id="radio-credit" type="radio" name="payment" value="credit" />
+                <label for="radio-credit">Credit Card</label>
+            </div>
+
+            <div>
+                <input id="radio-google-pay" type="radio" name="payment" value="gpay" />
+                <label for="radio-google-pay">Google Pay</label>
+            </div>
+
+            <div>
+            <input id="radio-apple-pay" type="radio" name="payment" value="apay" />
+            <label for="radio-apple-pay">Apple Pay</label>
+            </div>
+        </div>
+
+        <div>
+            <input id="check-promotions" type="checkbox" name="promotion" value="promotion" />
+            <label for="check-promotions">Sign me up for special promotions</label>
+        </div>
+
+        <div>
+            <label for="location">Preferred Location:</label>
+            <select id="location" name="location">
+                <option value="la">Los Angeles</option>
+                <option value="oc">Orange County</option>
+                <option value="riverside">Riverside</option>
+                <option value="sd">San Diego</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button>Cancel</button>
+        </div>
+    </form>
+
+    <table>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td id="td-name"></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td id="td-email"></td>
+        </tr>
+        <tr>
+            <td>payment</td>
+            <td id="td-payment"></td>
+        </tr>
+        <tr>
+            <td>promotion</td>
+            <td id="td-promotion"></td>
+        </tr>
+        <tr>
+            <td>location</td>
+            <td id="td-location"></td>
+        </tr>
+    </table>
+
     <script src="../js/ex4.js"></script>
 </body>
 </html>
