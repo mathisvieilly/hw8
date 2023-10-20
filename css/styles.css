@@ -1,0 +1,22 @@
+* {
+  font-family: 'Calibri';
+}
+
+#avatar {
+  width: 160px;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 0px 5px;
+}
+
+th {
+  padding: 5px;
+  background-color: lightgray;
+}
