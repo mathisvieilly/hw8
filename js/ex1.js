@@ -1,7 +1,6 @@
 fetch('https://raw.githubusercontent.com/bpesquet/thejsway/master/resources/paintings.json')
   .then(response => response.json())
   .then(paintings => {
-    console.log(paintings);
     const paintingList = document.getElementById('paintings');
 
     paintings.forEach(painting => {
